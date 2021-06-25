@@ -38,7 +38,7 @@
                                 <h5 class="m-0">Lorem Ipsum</h5>
                             </div><img class="img-fluid card-img w-100 d-block rounded-0" src="assets/img/ShadowOfTheColossus2018.jpg">
                             <div class="card-body">
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p><a href="#" class="btn btn-primary show-details" data-toggle="modal" data-target="#exampleModal" type="button" style="font-family: 'Bebas Neue', serif;background: var(--red);">show details</a>
+                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p><a href="#" class="btn btn-primary" id="detail-game" data-toggle="modal" data-target="#exampleModal" type="button" style="font-family: 'Bebas Neue', serif;background: var(--red);">show details</a>
                             </div>
                         </div>
                     </div>  
@@ -47,7 +47,7 @@
     </section>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -56,19 +56,19 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" id='detail-game'>
           <div class="container-fluid">
               <div class="row">
                   <div class="col-md-3">
-                      <img src="" class="img-fluid">
+                      <img src="" id="gambar-gg" class="img-fluid">
                   </div>
                   <div class="col-md">
                     <ul class="list-group">
-                        <li class="list-group-item"><h4>Judul Game</h4></li>
-                        <li class="list-group-item"><strong>Description : </strong> Text </li>
-                        <li class="list-group-item"><strong>Rating : </strong> Rating </li>
-                        <li class="list-group-item"><strong>Platforms : </strong> Platforms </li>
-                        <li class="list-group-item"><strong>URL : </strong> URL </li>
+                        <li class="list-group-item" id="nama-game"></li>
+                        <li class="list-group-item" id="deskripsi"></li>
+                        <li class="list-group-item" id="rating"></li>
+                        <li class="list-group-item" id="platform"></li>
+                        <li class="list-group-item" id="website"></li>
                       </ul>
                   </div>
               </div>
@@ -79,7 +79,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>
