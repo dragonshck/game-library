@@ -21,7 +21,7 @@
         <div class="container-fluid"><a class="navbar-brand" href="#" style="color: var(--red);font-family: 'Bebas Neue', serif;font-size: 30px;">PushPlay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <form class="form-inline ml-auto" target="_self">
-                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"><button class="btn btn-primary btn-search" id="search-button" type="button" style="font-family: 'Bebas Neue', serif;background: var(--red);">Search</button></div>
+                    <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-input" name="search"><button class="btn btn-primary btn-search" id="search-button" type="button" style="font-family: 'Bebas Neue', serif;background: var(--red);">Search</button></div>
                 </form>
             </div>
         </div>
@@ -38,13 +38,50 @@
                                 <h5 class="m-0">Lorem Ipsum</h5>
                             </div><img class="img-fluid card-img w-100 d-block rounded-0" src="assets/img/ShadowOfTheColossus2018.jpg">
                             <div class="card-body">
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p><button class="btn btn-primary" id="search-button" type="button" style="font-family: 'Bebas Neue', serif;background: var(--red);">show details</button>
+                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p><a href="#" class="btn btn-primary show-details" data-toggle="modal" data-target="#exampleModal" type="button" style="font-family: 'Bebas Neue', serif;background: var(--red);">show details</a>
                             </div>
                         </div>
                     </div>  
             </div>
         </section>
     </section>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Video Game Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-3">
+                      <img src="" class="img-fluid">
+                  </div>
+                  <div class="col-md">
+                    <ul class="list-group">
+                        <li class="list-group-item"><h4>Judul Game</h4></li>
+                        <li class="list-group-item"><strong>Description : </strong> Text </li>
+                        <li class="list-group-item"><strong>Rating : </strong> Rating </li>
+                        <li class="list-group-item"><strong>Platforms : </strong> Platforms </li>
+                        <li class="list-group-item"><strong>URL : </strong> URL </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards-.js"></script>
